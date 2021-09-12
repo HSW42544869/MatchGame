@@ -5,8 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mathgame"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Find all of the matching animals" Height="500" Width="450" HorizontalAlignment="Center" VerticalAlignment="Center">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="36,40,0,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36"/>
+        <TextBlock Margin="46,0,46,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition"/>
+        <TextBlock Margin="46,40,44,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Margin="46,37,46,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Margin="45,30,46,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="36,37,0,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="38,30,0,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36"/>
+        <TextBlock Grid.Column="2" Margin="38,40,38,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Grid.Column="3" Margin="38,40,39,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Grid.Column="2" Margin="38,37,38,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Grid.Column="2" Margin="38,30,38,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Grid.Column="3" Margin="38,37,39,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Grid.Column="3" Margin="38,30,39,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
+        <TextBlock Grid.Column="1" Margin="38,0,53,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition"/>
+        <TextBlock Grid.Column="2" Margin="38,0,38,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition"/>
+        <TextBlock Grid.Column="3" Margin="38,0,39,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition"/>
 
     </Grid>
 </Window>
