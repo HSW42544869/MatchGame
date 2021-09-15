@@ -21,7 +21,7 @@
             
         </Grid.RowDefinitions>
         <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="36,40,0,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36"/>
-        <TextBlock Margin="46,0,46,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition"/>
+        <TextBlock Margin="46,0,46,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" MouseDown="TextBlock_MouseDown"/>
         <TextBlock Margin="46,40,44,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
         <TextBlock Margin="46,37,46,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
         <TextBlock Margin="45,30,46,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width"/>
