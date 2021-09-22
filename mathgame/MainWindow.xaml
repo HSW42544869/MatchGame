@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:mathgame"
         mc:Ignorable="d"
-        Title="Find all of the matching animals" Height="600" Width="500" HorizontalAlignment="Center" VerticalAlignment="Center">
-    <Grid x:Name="mainGrid" Margin="-12,0,-29,-5">
+        Title="Find all of the matching animals" Height="450" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+    <Grid x:Name="mainGrid" Margin="-1,0,-0,-0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
             <ColumnDefinition/>
@@ -20,22 +20,22 @@
             <RowDefinition/>
 
         </Grid.RowDefinitions>
-        <TextBlock Margin="46,0,46,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" MouseDown="TextBlock_MouseDown" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="36,40,0,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" FontStyle="Italic"/>
-        <TextBlock Margin="46,40,44,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Margin="46,37,46,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Margin="45,30,46,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="36,37,0,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" FontStyle="Italic"/>
-        <TextBlock Grid.Column="1" HorizontalAlignment="Center" Margin="38,30,0,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" FontStyle="Italic"/>
-        <TextBlock Grid.Column="2" Margin="38,40,38,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="3" Margin="38,40,39,0" Grid.Row="1" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="2" Margin="38,37,38,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="2" Margin="38,30,38,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="3" Margin="38,37,39,0" Grid.Row="2" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="3" Margin="38,30,39,0" Grid.Row="4" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="1" Margin="38,0,53,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="2" Margin="38,0,38,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" HorizontalAlignment="Center" FontStyle="Italic"/>
-        <TextBlock Grid.Column="3" Margin="38,0,39,0" Text="?" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" FontSize="36" Margin="46,0,46,0" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" d:LayoutOverrides="Width, TopPosition, BottomPosition" MouseDown="TextBlock_MouseDown" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" FontSize="36" Grid.Column="1" HorizontalAlignment="Center" Margin="36,40,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontStyle="Italic"/>
+        <TextBlock Text="?" FontSize="36" Margin="46,40,44,0" Grid.Row="1"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" FontSize="36" Margin="46,37,46,0" Grid.Row="2"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Margin="45,30,46,0" Grid.Row="4"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="1" HorizontalAlignment="Center" Margin="36,37,0,0" Grid.Row="2"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="1" HorizontalAlignment="Center" Margin="38,30,0,0" Grid.Row="4"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="2" Margin="38,40,38,0" Grid.Row="1"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="3" Margin="38,40,39,0" Grid.Row="1"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="2" Margin="38,37,38,0" Grid.Row="2"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="2" Margin="38,30,38,0" Grid.Row="4"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="3" Margin="38,37,39,0" Grid.Row="2"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="3" Margin="38,30,39,0" Grid.Row="4"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="1" Margin="38,0,53,0"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="2" Margin="38,0,38,0"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" HorizontalAlignment="Center" FontStyle="Italic"/>
+        <TextBlock Text="?" Grid.Column="3" Margin="38,0,39,0"  TextWrapping="Wrap" VerticalAlignment="Center" FontFamily="Algerian" FontSize="36" d:LayoutOverrides="Width, TopPosition, BottomPosition" HorizontalAlignment="Center" FontStyle="Italic"/>
 
     </Grid>
 </Window>
