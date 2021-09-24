@@ -37,7 +37,7 @@ namespace mathgame
         {
             tenthsOfSecondsElapsed++;
             timeTextBlock.Text = (tenthsOfSecondsElapsed / 10f).ToString("0.0s");
-            if (matcheesFound ==8)
+            if (matcheesFound == 8)
             {
                 timer.Stop();
                 timeTextBlock.Text = timeTextBlock.Text + " - Play again";
@@ -61,11 +61,16 @@ namespace mathgame
 
             foreach (TextBlock textBlock in mainGrid.Children.OfType<TextBlock>())
             {
-                int index = random.Next(animalEmoji.Count);
-                string nextEmoji = animalEmoji[index];
-                textBlock.Text = nextEmoji;
-                animalEmoji.RemoveAt(index);
+                if (textBlock.Name != "timeTextBlock") {
+                    textBlock.Visibility = Visibility.Visible;
+                    int index = random.Next(animalEmoji.Count);
+                    string nextEmoji = animalEmoji[index];
+                    textBlock.Text = nextEmoji;
+                    animalEmoji.RemoveAt(index); }
             }
+            timer.Start();
+            tenthsOfSecondsElapsed = 0;
+            matcheesFound = 0;
         }
         TextBlock lastTextBlockClicked;
         bool findingMatch = false;
@@ -80,6 +85,7 @@ namespace mathgame
             }
             else if (textBlock.Text == lastTextBlockClicked.Text)
             {
+                matcheesFound++;
                 textBlock.Visibility = Visibility.Hidden;
                 findingMatch = false;
             }
